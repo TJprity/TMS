@@ -45,37 +45,37 @@ public class TransportMgmtController {
 		return routeSrv.getRoutes();
 	}
 	
-	@PostMapping("/addRoute")
+	@PostMapping("/add-route")
 	public Routes addRoute(@RequestBody Routes route) {
 		return routeSrv.addRoute(route);
 //		return "new route added"+route;
 	}
 	
-	@PostMapping("/addPickupPlace")
+	@PostMapping("/add-pickup-place")
 	public PickupPlace addPickupPlace(@RequestBody PickupPlace pickupPlace) {
 //		return "new PickupPlace added"+pickupPlace;
 		return pickupPlaceSrv.addPickupPlace(pickupPlace);
 	}
 	
-	@PostMapping("/addDriver")
+	@PostMapping("/add-driver")
 	public Driver addDriver(@RequestBody Driver driver) {
 //		return "new Driver added"+driver;
 		return driverSrv.addDriver(driver);
 	}
 	
-	@PostMapping("/addVehicle")
+	@PostMapping("/add-vehicle")
 	public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
 //		return "new Vehicle added"+vehicle;
 		return vehicleSrv.addVehicle(vehicle);
 	}
 
-	@PostMapping("/addStudent")
+	@PostMapping("/add-student")
 	public Student addStudent(@RequestBody Student student) {
 //		return "new Student added"+student;
 		return studentSrv.addStudent(student);
 	}
 	
-	@PostMapping("/editTransportAllocation")
+	@PostMapping("/edit-transport-allocation")
 	public TransportAllocation editTransportAllocation(@RequestBody TransportAllocation TAlloc) {
 //		return "new TransportAllocation edited"+TAlloc;
 		return transportAllocationSrv.addTansportAllocation(TAlloc);
